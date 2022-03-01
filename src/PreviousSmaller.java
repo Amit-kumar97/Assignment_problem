@@ -59,10 +59,42 @@ public class PreviousSmaller {
             s.push(arr[i]);
         }
     }
+    
+                       //=================2 WAY===============//
 
+    public static void findPrevSmaller02(int[] arr)
+    {
+        //-------------base case
+        if (arr == null || arr.length == 0) {
+            return;
+        }
+
+        for (int i = 0; i < arr.length; i++)
+        {
+            //---------keep track of the previous smaller element for element `arr[i]`
+            int prev = -1;
+
+            //---------process elements on the left of the element `arr[i]`
+            for (int j = i - 1; j >= 0; j--)
+            {
+                //----------break the inner loop at the first smaller element on theleft of the element `arr[i]`
+                if (arr[j] < arr[i])
+                {
+                    prev = arr[j];
+                    break;
+                }
+            }
+
+            System.out.print(prev + " ");
+        }
+    }
+
+  
     public static void main(String[] args)
     {
         int[] arr = { 2, 5, 3, 7, 8, 1, 9 };
         findPrevSmaller(arr);
+        System.out.println();
+        findPrevSmaller02(arr);
     }
 }
