@@ -1,6 +1,7 @@
 /*
 java program to sort an array using insertion sort algorithm.
 */
+//-----------Worst Case Complexity: O(n2)
 
 public class InsertionSort {  
     public static void insertionSort(int array[]) {  
