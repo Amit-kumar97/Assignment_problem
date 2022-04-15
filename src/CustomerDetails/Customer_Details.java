@@ -87,7 +87,8 @@ public class Customer_Details {
         System.out.println(Arrays.toString(ar));
     }
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Customer_Details [" + "customerID=" + customerID + ", customerName='" + customerName + '\'' + ", customerAddress='" + customerAddress + '\'' + ']';
     }
 
