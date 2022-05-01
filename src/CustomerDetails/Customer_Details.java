@@ -8,31 +8,37 @@ public class Customer_Details {
     private String customerName;
     private String customerAddress;
 
-    public int getCustomerID() {
+    public int getCustomerID() 
+    {
         return customerID;
     }
 
-    public void setCustomerID(int customerID) {
+    public void setCustomerID(int customerID) 
+    {
         this.customerID = customerID;
     }
 
-    public String getCustomerName() {
+    public String getCustomerName() 
+    {
         return customerName;
     }
 
-    public void setCustomerName(String customerName) {
+    public void setCustomerName(String customerName) 
+    {
         this.customerName = customerName;
     }
 
-    public String getCustomerAddress() {
+    public String getCustomerAddress() 
+    {
         return customerAddress;
     }
 
-    public void setCustomerAddress(String customerAddress) {
+    public void setCustomerAddress(String customerAddress) 
+    {
         this.customerAddress = customerAddress;
     }
 
- //   Customer_Details[] ar;
+    //   Customer_Details[] ar;
     public void getCustomerDetail(Customer_Details[] ar)
     {
         System.out.println(Arrays.toString(ar));
@@ -55,6 +61,7 @@ public class Customer_Details {
 
         return ar;
     }
+    
     public void getCustomer(int customerID,Customer_Details[] ar)
     {
         int temp = 0;
@@ -86,8 +93,10 @@ public class Customer_Details {
 
         System.out.println(Arrays.toString(ar));
     }
+    
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Customer_Details [" + "customerID=" + customerID + ", customerName='" + customerName + '\'' + ", customerAddress='" + customerAddress + '\'' + ']';
     }
 
